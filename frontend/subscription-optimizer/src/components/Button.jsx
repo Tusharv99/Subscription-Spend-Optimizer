@@ -1,5 +1,4 @@
 
-
 const Button = ({ 
   type = 'button', 
   onClick, 
@@ -8,10 +7,12 @@ const Button = ({
   disabled = false,
   variant = 'primary'
 }) => {
-  const baseStyle = 'px-6 py-2.5 font-medium rounded-lg transition duration-200'
-  const variantStyle = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700',
-    secondary: 'bg-gray-600 text-white hover:bg-gray-700',
+  const baseStyles = 'px-6 py-2.5 font-medium rounded-lg transition-all duration-200'
+  const variantStyles = {
+    primary: 'bg-primary text-white hover:bg-primary/90',
+    secondary: 'bg-secondary text-white hover:bg-secondary/90',
+    success: 'bg-success text-white hover:bg-success/90',
+    danger: 'bg-danger text-white hover:bg-danger/90',
   }
   
   return (
@@ -19,8 +20,8 @@ const Button = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${baseStyle} ${variantStyle[variant]} ${fullWidth ? 'w-full' : ''} 
-        ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
+      className={`${baseStyles} ${variantStyles[variant]} ${fullWidth ? 'w-full' : ''} 
+        ${disabled ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02] active:scale-[0.98]'}`}
     >
       {children}
     </button>

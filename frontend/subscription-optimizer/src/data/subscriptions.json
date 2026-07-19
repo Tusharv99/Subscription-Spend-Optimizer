@@ -1,0 +1,204 @@
+{
+  "subscriptions": [
+    {
+      "id": 1,
+      "serviceName": "Netflix",
+      "provider": "Netflix Inc.",
+      "category": "Entertainment",
+      "price": 199,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-25",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "serviceName": "Spotify Premium",
+      "provider": "Spotify AB",
+      "category": "Music",
+      "price": 119,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-20",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "serviceName": "ChatGPT Plus",
+      "provider": "OpenAI",
+      "category": "AI Tools",
+      "price": 2400,
+      "billingCycle": "yearly",
+      "renewalDate": "2026-08-15",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "serviceName": "GitHub Pro",
+      "provider": "GitHub",
+      "category": "Developer Tools",
+      "price": 72,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-28",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "serviceName": "AWS",
+      "provider": "Amazon Web Services",
+      "category": "Cloud Services",
+      "price": 1500,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-22",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "serviceName": "Canva Pro",
+      "provider": "Canva",
+      "category": "Design Tools",
+      "price": 1199,
+      "billingCycle": "yearly",
+      "renewalDate": "2026-09-10",
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "serviceName": "Figma",
+      "provider": "Figma Inc.",
+      "category": "Design Tools",
+      "price": 180,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-18",
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "serviceName": "Notion",
+      "provider": "Notion Labs",
+      "category": "Productivity",
+      "price": 120,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-30",
+      "status": "active"
+    },
+    {
+      "id": 9,
+      "serviceName": "Adobe Creative Cloud",
+      "provider": "Adobe Inc.",
+      "category": "Design Tools",
+      "price": 3500,
+      "billingCycle": "yearly",
+      "renewalDate": "2026-11-05",
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "serviceName": "Google One",
+      "provider": "Google",
+      "category": "Storage",
+      "price": 130,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-25",
+      "status": "active"
+    },
+    {
+      "id": 11,
+      "serviceName": "YouTube Premium",
+      "provider": "Google",
+      "category": "Entertainment",
+      "price": 139,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-19",
+      "status": "active"
+    },
+    {
+      "id": 12,
+      "serviceName": "Microsoft 365",
+      "provider": "Microsoft",
+      "category": "Productivity",
+      "price": 650,
+      "billingCycle": "yearly",
+      "renewalDate": "2026-10-20",
+      "status": "active"
+    },
+    {
+      "id": 13,
+      "serviceName": "Dropbox Plus",
+      "provider": "Dropbox",
+      "category": "Storage",
+      "price": 1200,
+      "billingCycle": "yearly",
+      "renewalDate": "2027-01-15",
+      "status": "paused"
+    },
+    {
+      "id": 14,
+      "serviceName": "Zoom Pro",
+      "provider": "Zoom Video",
+      "category": "Communication",
+      "price": 180,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-27",
+      "status": "active"
+    },
+    {
+      "id": 15,
+      "serviceName": "Slack",
+      "provider": "Slack Technologies",
+      "category": "Communication",
+      "price": 88,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-23",
+      "status": "expired"
+    },
+    {
+      "id": 16,
+      "serviceName": "Digital Ocean",
+      "provider": "DigitalOcean",
+      "category": "Cloud Services",
+      "price": 600,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-08-01",
+      "status": "active"
+    },
+    {
+      "id": 17,
+      "serviceName": "MongoDB Atlas",
+      "provider": "MongoDB",
+      "category": "Cloud Services",
+      "price": 900,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-07-29",
+      "status": "active"
+    },
+    {
+      "id": 18,
+      "serviceName": "Render",
+      "provider": "Render Inc.",
+      "category": "Cloud Services",
+      "price": 700,
+      "billingCycle": "monthly",
+      "renewalDate": "2026-08-05",
+      "status": "active"
+    },
+    {
+      "id": 19,
+      "serviceName": "Vercel",
+      "provider": "Vercel Inc.",
+      "category": "Cloud Services",
+      "price": 2400,
+      "billingCycle": "yearly",
+      "renewalDate": "2026-12-01",
+      "status": "active"
+    },
+    {
+      "id": 20,
+      "serviceName": "Cloudinary",
+      "provider": "Cloudinary",
+      "category": "Cloud Services",
+      "price": 1500,
+      "billingCycle": "yearly",
+      "renewalDate": "2027-02-20",
+      "status": "paused"
+    }
+  ]
+}
