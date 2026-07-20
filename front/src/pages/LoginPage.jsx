@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
-import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Label } from '../components/ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
-import { Alert, AlertDescription } from '../components/ui/alert';
-import { Eye, EyeOff, Loader2 } from 'lucide-react';
+import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Eye, EyeOff, Loader2, CreditCard } from 'lucide-react';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -33,24 +33,29 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
-          <CardDescription className="text-center">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+      <Card className="w-full max-w-md border border-gray-200 shadow-sm">
+        <CardHeader className="space-y-3">
+          <div className="flex justify-center">
+            <div className="w-12 h-12 rounded-xl bg-gray-900 flex items-center justify-center">
+              <CreditCard className="w-6 h-6 text-white" />
+            </div>
+          </div>
+          <CardTitle className="text-2xl text-center text-gray-900">Welcome Back</CardTitle>
+          <CardDescription className="text-center text-gray-500">
             Sign in to your account to manage your subscriptions
           </CardDescription>
         </CardHeader>
         <CardContent>
           {error && (
-            <Alert variant="destructive" className="mb-4">
+            <Alert className="mb-4 border-red-200 bg-red-50 text-red-700">
               <AlertDescription>{error}</AlertDescription>
             </Alert>
           )}
           
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email" className="text-gray-700">Email</Label>
               <Input
                 id="email"
                 type="email"
@@ -58,11 +63,12 @@ const LoginPage = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                className="border-gray-300 bg-white text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400"
               />
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password" className="text-gray-700">Password</Label>
               <div className="relative">
                 <Input
                   id="password"
@@ -71,11 +77,12 @@ const LoginPage = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  className="border-gray-300 bg-white text-gray-900 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 pr-10"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
                 >
                   {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                 </button>
@@ -84,7 +91,7 @@ const LoginPage = () => {
 
             <Button 
               type="submit" 
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+              className="w-full bg-gray-900 hover:bg-gray-800 text-white"
               disabled={loading}
             >
               {loading ? (
@@ -98,9 +105,9 @@ const LoginPage = () => {
             </Button>
           </form>
 
-          <div className="mt-4 text-center text-sm">
+          <div className="mt-6 text-center text-sm">
             <span className="text-gray-500">Don't have an account? </span>
-            <Link to="/signup" className="text-blue-600 hover:underline font-medium">
+            <Link to="/signup" className="text-gray-900 font-medium hover:underline">
               Sign up
             </Link>
           </div>
