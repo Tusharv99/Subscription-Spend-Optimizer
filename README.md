@@ -1,28 +1,3 @@
-````markdown
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:2563EB,100:06B6D4&text=Subscription%20Spend%20Optimizer&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
-</p>
-
-<h3 align="center">
-Track • Analyze • Optimize • Save Money 💰
-</h3>
-
-<p align="center">
-A modern MERN Stack application to efficiently manage recurring subscriptions and SaaS expenses with analytics, dashboards, and spending insights.
-</p>
-
-<p align="center">
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-black?style=for-the-badge&logo=express)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
-</p>
-
----
 
 # 📖 Overview
 
@@ -298,13 +273,6 @@ Recommended:
 
 # ❤️ Built With
 
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,mongodb,tailwind,vite"/>
-
-</p>
-
-<p align="center">
 
 **Made with ❤️ using the MERN Stack**
 
