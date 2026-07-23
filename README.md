@@ -202,23 +202,6 @@ You can deploy using:
 - Use HTTPS in production
 - Validate API inputs
 
----
-
-# 🏛 Project Architecture
-
-```text
-                    React + Vite
-                          │
-                          │ Axios
-                          ▼
-                  Express REST API
-                          │
-               JWT Authentication
-                          │
-                     Mongoose ODM
-                          │
-                      MongoDB Atlas
-```
 
 ---
 
